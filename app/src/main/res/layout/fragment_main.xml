@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#595856"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        
+        <TextView
+            android:id="@+id/location_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Target:Amarillo,TX"
+            android:textColor="#F7F6F2"
+            />
+
+        <TextView
+            android:id="@+id/ETA_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="ETA: 10:34pm"
+            android:textColor="#F7F6F2"/>
+
+
+
+
+
+
+        <!--First line for time -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:10am"
+                    android:textColor="#F7F6F2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                   <include
+                       layout="@layout/driving_button"/>
+
+                    <TextView
+                        android:id="@+id/time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driving"
+                        android:textColor="#F7F6F2"/>
+
+                    <TextView
+                        android:id="@+id/time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1hr 35m left"
+                        android:paddingBottom="20dp"
+                        android:textColor="#F7F6F2"/>
+
+                    <include
+                        layout="@layout/sleep_button"
+                        />
+
+                    <TextView
+                        android:id="@+id/time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sleep/Off Duty"
+                        android:textColor="#F7F6F2"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+
+                   <include
+                       layout="@layout/onduty_button"
+                     />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="On Duty"
+                        android:textColor="#F7F6F2"/>
+
+                    <TextView
+                        android:id="@+id/time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0hr 12m left"
+                        android:paddingBottom="20dp"
+                        android:textColor="#F7F6F2"/>
+
+
+                    <include
+                        layout="@layout/total_button"/>
+
+                    <TextView
+                        android:id="@+id/time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Time"
+                        android:textColor="#F7F6F2"/>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

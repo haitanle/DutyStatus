@@ -1,10 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:drawable="@drawable/circular_background"
-      />
-    <item
-        android:drawable="@drawable/driving_progress_ring"
-        />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="oval"
+            >
+            <corners android:radius="8dip" />
+            <!--<stroke android:width="2dip" android:color="#FFFF"/>-->
+            <solid android:color="#FFFF"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="8dip" />
+                <stroke android:width="2dip" android:color="#FFFF"/>
+                <solid android:color="#FF00"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape
+                android:shape="ring">
+                <corners android:radius="8dip" />
+                <stroke android:width="2dip" android:color="#FFFF"/>
+                <solid android:color="#FF00"/>
+            </shape>
+        </clip>
+    </item>
 </layer-list>
